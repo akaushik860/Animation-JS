@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body style="background-color: darkslategrey;">
+    <div class="demo-wrapper">
+        <div class="square" id="first">1</div>
+      
+        <div class="square" id="second">3</div>
+      
+        <div class="square" id="third">8</div>
+        <div class="square" id="fourth">4</div>
+        <div class="square" id="fifth">6</div>
+
+    </div>
+    <script src="anime.min.js"></script>
+<script>
+    let boo = false;
+    
+    anime({
+        
+  targets: '#first',
+  translateY: 300,
+  easing: 'easeInOutSine',
+  translateX: -100,
+  delay:1000,
+  direction: 'alternate',
+    });
+
+anime({
+  targets: '#second',
+  translateY: 300,
+  easing: 'easeInOutSine',
+  direction: 'alternate',
+  delay:1000,
+ 
+});
+
+</script>
+</body>
+</html>
